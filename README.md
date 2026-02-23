@@ -60,6 +60,8 @@ Example Usage-
 
 **Love APKdevastate?** Give us a ⭐ on GitHub!
 
+[![Star History Chart](https://api.star-history.com/svg?repos=rafigk2v9c/APKdevastate&type=date&legend=top-left)](https://www.star-history.com/#rafigk2v9c/APKdevastate&type=date&legend=top-left)
+
 
 ## Installation
 
