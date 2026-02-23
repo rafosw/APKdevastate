@@ -69,8 +69,6 @@ Please download the .rar file with the name of the application and then extract 
 
 The application may be detected as infected by Anti-Virus because it contains RAT names
 
-> **Disclaimer**: APKdevastate does not guarantee 100% accuracy in all detections or results. Use at your own discretion.
-
 Download latest version:
 
 ```bash
@@ -78,3 +76,6 @@ https://github.com/rafigk2v9c/APKdevastate/releases/tag/APKdevastatev1.5
 ```
 
 [Read More.](https://rafigk2v9c.github.io/posts/apkdevastaten)
+
+
+> **Disclaimer**: APKdevastate does not guarantee 100% accuracy in all detections or results. Use at your own discretion.
