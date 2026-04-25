@@ -12,7 +12,10 @@
 
 **APKdevastate** is a powerful Windows application designed to analyze Android APK files for security risks, malware signatures, and suspicious behaviors. The tool helps identify potentially malicious applications by examining permissions, certificate information, and known Remote Access Trojan (RAT) signatures.
 
-The application may be detected as infected by Anti-Virus because it contains RAT names
+The application may be detected as infected by Anti-Virus because it contains RAT names\
+
+**CLI Version for Linux**: [https://github.com/rafosw/APKdevastate-cli](https://github.com/rafosw/APKdevastate-cli)
+
 
 
 ---
