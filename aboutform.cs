@@ -32,7 +32,7 @@ namespace APKdevastate
         {
             ProcessStartInfo psi = new ProcessStartInfo
             {
-                FileName = "https://github.com/rafigk2v9c",
+                FileName = "https://github.com/rafosw",
                 UseShellExecute = true
             };
             Process.Start(psi);
@@ -42,10 +42,15 @@ namespace APKdevastate
         {
             ProcessStartInfo psi = new ProcessStartInfo
             {
-                FileName = "https://rafigk2v9c.github.io",
+                FileName = "https://rafosw.github.io",
                 UseShellExecute = true
             };
             Process.Start(psi);
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
