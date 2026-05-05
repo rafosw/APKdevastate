@@ -14,7 +14,7 @@ using System.Diagnostics;
 using System.Net;
 
 //The concept and idea for the APKdevastate application belong entirely to Rafig Zarbaliyev!
-//If there is an error in the app or if you have any suggestions for additional features, please open PR
+//If there is an error in the app or if you have any suggestions for additional features, please message me on Instagram(@rafok2v9c)
 //Read this guide to learn how to use APKdevastate https://rafosw.github.io/posts/apkdevastaten/
 
 namespace APKdevastate
@@ -1071,7 +1071,6 @@ namespace APKdevastate
                     "c3B5bWF4",               // spymax
                     "Y3JheHNyYXQ=",           // craxsrat
                     "Y2VsbGlrcmF0",           // cellikrat
-                    "aW5zb21uaWFzcHk=",       // insomniaspy
                     "Y3lwaGVycmF0",           // cypherrat
                     "ZWFnbGVzcHk=",           // eaglespy
                     "Zy03MDByYXQ=",           // g-700rat
@@ -1084,6 +1083,7 @@ namespace APKdevastate
                     "YW5kcm9yYXQ=",           // androrat
                     "QWhNeXRo",               // ahmyth
                     "TllBTnhDQVQ=",           // massrat
+                    "cWlSQVQ="                // qirat
 
 
                 };
@@ -1104,8 +1104,12 @@ namespace APKdevastate
                 bool ratFound = false;
                 string foundRatName = "";
 
-                //Metasploit/msfvenomu dedect etmek ucun
+                //Bagimsiz calisan RAT adina gore dedect eden rule
                 var allFiles = Directory.GetFiles(tempPath, "*.*", SearchOption.AllDirectories);
+
+
+
+                //Metasploit/msfvenomu dedect etmek ucun
                 string metasploitPackage = DecodeBase64("Y29tLm1ldGFzcGxvaXQuc3RhZ2U="); // com.metasploit.stage
                 string metasploitName = DecodeBase64("bWV0YXNwbG9pdA=="); // metasploit
                 
@@ -1170,6 +1174,7 @@ namespace APKdevastate
                         }
 
                         //Spynote version 5i dedect etmek ucun
+
                         string spynoteV5Keyword = DecodeBase64("Y2FtZXJhX21hbmFnZXJmeGYweDR4NHgwZnhm"); // camera_managerfxf0x4x4x0fxf
                         string spynoteName = DecodeBase64("c3B5bm90ZQ=="); // spynote
                         
@@ -1200,16 +1205,44 @@ namespace APKdevastate
                                 foundRatName = massratname;
                                 break;
                             }
+                       
+
+                        //Qirati dedect etmek ucun
+                            string qiratkeyword = DecodeBase64("Y29tLnFpcmF0LnN0dWI=");
+                            string qiratname = DecodeBase64("cWlSQVQ=");
+
+                            if (content.Contains(qiratkeyword)) {
+                                ratFound = true;
+                                foundRatName = qiratname;
+                                break;
+                            }
+
+                            //Spynote dedect etmek ucun | yeni rule
+
+                            string spynotenewrule = DecodeBase64("Y21mMC5jM2I1Ym05MHpxLnBhdGNo");
+
+                            if (content.Contains(spynotenewrule))
+                            {
+                                ratFound = true;
+                                foundRatName = spynoteName;
+                                break;
+                            }
+                            
+
+
+
+
 
 
 
                             //Ahmyth dedect etmek ucun
                             string ahmythKeyword = DecodeBase64("YWhteXRoLm1pbmUua2luZy5haG15dGg="); // ahmyth.mine.king.ahmyth
+                            string ahmythname = DecodeBase64("QWhteXRo");
 
                             if (content.Contains(ahmythKeyword))
                             {
                                 ratFound = true;
-                                foundRatName = ahmythKeyword;
+                                foundRatName = ahmythname;
                                 break;
                             }
 
