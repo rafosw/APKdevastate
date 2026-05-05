@@ -74,7 +74,7 @@ Please download the .rar file with the name of the application and then extract 
 Download latest version:
 
 ```bash
-https://github.com/rafosw/APKdevastate/releases/tag/APKdevastatev1.5
+https://github.com/rafosw/APKdevastate/releases/tag/APKdevastatev1.6
 ```
 
 [Read More.](https://rafosw.github.io/posts/apkdevastaten)
